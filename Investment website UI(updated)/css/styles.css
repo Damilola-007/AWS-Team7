@@ -5348,12 +5348,6 @@
 	letter-spacing:0;
 }
 
-body{
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    transform: scale(0.65);
-}
-
 * {
     box-sizing: border-box;
   }
@@ -6648,3 +6642,8 @@ button.v85_22 {
     color: rgb(255, 0, 76);
   }
 
+body{
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    transform: scale(0.85);
+}
