@@ -1,0 +1,443 @@
+* {
+box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v91_127 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(248,248,248,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_128 {
+  width: 100%;
+  height: 100%;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 64px;
+  overflow: hidden;
+}
+.v91_129 {
+  width: 688px;
+  height: 1024px;
+  background: url("../images/v91_129.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_130 {
+  width: 688px;
+  height: 100%;
+  background: rgba(188,187,187,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_131 {
+  width: 520px;
+  height: 746px;
+  background: url("../images/v91_131.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 122px;
+  left: 84px;
+  overflow: hidden;
+}
+.v91_132 {
+  width: 458px;
+  height: 482px;
+  background: url("../images/v91_132.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  overflow: hidden;
+}
+.v91_133 {
+  width: 257px;
+  height: 328px;
+  background: rgba(132,131,131,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_134 {
+  width: 257px;
+  height: 328px;
+  background: rgba(132,131,131,1);
+  opacity: 1;
+  position: absolute;
+  top: 154px;
+  left: 101px;
+  overflow: hidden;
+}
+.v91_135 {
+  width: 257px;
+  height: 328px;
+  background: rgba(132,131,131,1);
+  opacity: 1;
+  position: absolute;
+  top: 68px;
+  left: 201px;
+  overflow: hidden;
+}
+.v91_136 {
+  width: 520px;
+  height: 184px;
+  background: url("../images/v91_136.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 546px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_137 {
+  width: 520px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_138 {
+  width: 520px;
+  color: rgb(27, 12, 245);
+  position: absolute;
+  top: 124px;
+  left: 0px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 0.5;
+  text-align: center;
+}
+.v91_139 {
+  width: 752px;
+  height: 1018px;
+  background: url("../images/v91_139.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 6px;
+  left: 688px;
+  overflow: hidden;
+}
+.v91_140 {
+  width: 688px;
+  height: 100%;
+  background: rgba(248,248,248,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v210_7 {
+  width: 36px;
+  height: 33px;
+  background: rgba(240,240,240,1);
+  opacity: 1;
+  position: absolute;
+  top: 544px;
+  left: 64px;
+  overflow: hidden;
+}
+.v91_141 {
+  width: 222px;
+  height: 61px;
+  background: rgba(0,0,0,1);
+  padding: 16px 32px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 701px;
+  left: 415px;
+  overflow: hidden;
+}
+.v91_142 {
+  width: 53px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 18px;
+  left: 84px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_143 {
+  width: 489px;
+  height: 78px;
+  background: url("../images/v91_143.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 158px;
+  left: 100px;
+  overflow: hidden;
+}
+.v91_144 {
+  width: 215px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 137px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 38px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_145 {
+  width: 455px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 56px;
+  left: 17px;
+  font-family: Mulish;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_146 {
+  width: 573px;
+  height: 68px;
+  background: url("../images/v91_146.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 807px;
+  left: 58px;
+  overflow: hidden;
+}
+.v91_147 {
+  width: 573px;
+  background: url("../images/v91_147.png");
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(0,0,0,0.10000000149011612);
+}
+.v91_148 {
+  width: 451px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_149 {
+  width: 86px;
+  height: 64px;
+  background: url("../images/v91_149.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 62px;
+  left: 64px;
+  overflow: hidden;
+}
+.v91_150 {
+  width: 86px;
+  height: 64px;
+  background: rgba(156,154,154,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_151 {
+  width: 52px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;
+}
+.v91_158 {
+  width: 573px;
+  height: 88px;
+  background: url("../images/v91_158.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 300px;
+  left: 64px;
+  overflow: hidden;
+}
+.v91_159 {
+  width: 151px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v91_160 {
+  width: 573px;
+  height: 48px;
+  background: rgba(240,240,240,1);
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  overflow: hidden;
+}
+.v91_161 {
+  width: 573px;
+  height: 88px;
+  background: url("../images/v91_161.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 424px;
+  left: 64px;
+  overflow: hidden;
+}
+.v91_162 {
+  width: 104px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v91_163 {
+  width: 573px;
+  height: 48px;
+  background: rgba(240,240,240,1);
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  overflow: hidden;
+}
+.v210_8 {
+  width: 170px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 548px;
+  left: 150px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v210_10 {
+  width: 170px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 548px;
+  left: 150px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v210_11 {
+  width: 189px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 732px;
+  left: 64px;
+  font-family: Mulish;
+  font-weight: Bold;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+
+
+/* Change login text color on hover */
+.v91_148:hover {
+    color: rgb(255, 0, 76);
+  }
+
+  button.v91_141{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  /* Change button color on hover */
+  .v91_141:hover {
+    background-color: #8e3e76;
+}
+
+.clicked {
+    background-color: gold;
+    color: white;
+    cursor: default;
+  }
+
+  .v210_11:hover {
+    background-color: #8e3e76;
+  }
