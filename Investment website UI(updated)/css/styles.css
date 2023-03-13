@@ -5679,6 +5679,9 @@ box-sizing: border-box;
 }
 body {
   font-size: 14px;
+      -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    transform: scale(0.65);
 }
 .v91_127 {
   width: 100%;
@@ -6118,12 +6121,24 @@ body {
     background-color: #8e3e76;
   }
 
+  input[type="password"] {
+    font-size: 24px;
+  }
+  input[type="text"] {
+    font-size: 24px;
+  }
+  
+
   * {
     box-sizing: border-box;
     
   }
   body {
     font-size: 14px;
+          -webkit-transform: scale(0.25);
+      -moz-transform: scale(0.25);
+      transform: scale(0.65);
+  
     
   }
   .v85_5 {
@@ -6641,6 +6656,64 @@ button.v85_22 {
   .v85_27:hover {
     color: rgb(255, 0, 76);
   }
+
+  input[type="password"] {
+    font-size: 24px;
+  }
+  input[type="text"] {
+    font-size: 24px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Rules for indicating password strength */
+#password-strength {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#password-strength::before {
+  content: "Password Strength: ";
+}
+
+#password-strength .weak {
+  color: red;
+}
+
+#password-strength .medium {
+  color: orange;
+}
+
+#password-strength .strong {
+  color: green;
+}
+
+/* Rules for indicating password requirements */
+.password-requirements {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.password-requirements::before {
+  content: "Password must contain: ";
+}
+
+.password-requirements li {
+  margin-bottom: 5px;
+}
+
+.password-requirements .invalid {
+  color: red;
+}
+
+.password-requirements .valid {
+  color: green;
+}
+
 
 .prodreg {
 	width: 573px;
