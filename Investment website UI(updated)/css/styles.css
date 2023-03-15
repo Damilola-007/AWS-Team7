@@ -6984,16 +6984,16 @@ button.v85_22 {
 	overflow: hidden;
 }
 .prodregbutton1 {
-  width: 53px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 18px;
-  left: 84px;
-  font-family: Mulish;
-  font-weight: Bold;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
+	width: 132px;
+	color: rgba(255,255,255,1);
+	position: absolute;
+	top: 15px;
+	left: 56px;
+	font-family: Mulish;
+	font-weight: Bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: center;
 }
 
 .ideareg {
@@ -7489,16 +7489,16 @@ button.v85_22 {
 	overflow: hidden;
 }
 .idearegbutton1 {
-  width: 53px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 18px;
-  left: 84px;
-  font-family: Mulish;
-  font-weight: Bold;
-  font-size: 20px;
-  opacity: 1;
-  text-align: center;
+	width: 106px;
+	color: rgba(255,255,255,1);
+	position: absolute;
+	top: 16px;
+	left: 67px;
+	font-family: Mulish;
+	font-weight: Bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: center;
 }
 
 body{
