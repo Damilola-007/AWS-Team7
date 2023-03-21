@@ -4405,7 +4405,7 @@
 	letter-spacing:0;
 }
 .e91_97 { 
-	background-color:rgba(255, 255, 255, 1);
+	
 	width:280px;
 	height:44px;
 	position:absolute;
@@ -4413,7 +4413,7 @@
 	top:454px;
 }
 .e91_98 { 
-	color:rgba(0, 0, 0, 1);
+	color:rgba(255, 255, 255, 1);
 	width:158px;
 	height:28px;
 	position:absolute;
@@ -7536,6 +7536,75 @@ button.v85_22 {
 	font-size: 20px;
 	opacity: 1;
 	text-align: center;
+}
+
+.naviIdea {
+	color:rgba(255, 255, 255, 1);
+	width:158px;
+	height:28px;
+	position:absolute;
+	left:61px;
+	top:746px;
+	font-family:Arial;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.naviProduct {
+	color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:28px;
+	position:absolute;
+	left:0px;
+	top:660px;
+	font-family:Arial;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+}
+
+.naviIdeaBar {
+	background-color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:44px;
+	position:absolute;
+	left:0px;
+	top:746px;
+}
+
+.naviIdeaBlack {
+	color:rgba(0, 0, 0, 1);
+	width:158px;
+	height:28px;
+	position:absolute;
+	left:61px;
+	top:9px;
+	font-family:Arial;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+
+.naviProductBar {
+	background-color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:44px;
+	position:absolute;
+	left:0px;
+	top:660px;
+}
+
+.naviProductBlack {
+	color:rgba(0, 0, 0, 1);
+	width:280px;
+	height:28px;
+	position:absolute;
+	left:2px;
+	top:9px;
+	font-family:Arial;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
 }
 
 body{
