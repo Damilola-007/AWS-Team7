@@ -60,7 +60,7 @@ if(isset($_POST['productregister']))
     <div class="e91_93"></div>
     <div class=e91_94>
       <div class="e91_95"></div><span  class="e91_96">Home</span>
-      <div class=e91_97><span  class="e91_98">Recommender</span></div><span  class="e91_99">Evaluate Ideas</span><span  class="e91_100">Settings</span><span  class="e91_101">Messages</span>
+      <div class=e91_97><span  class="e91_98">Recommender</span></div><span  class="e91_99">Evaluate Ideas</span><a href="Idea registration.php"><span  class="naviIdea">Register Ideas</span></a><div class=naviProductBar><a href="Product registration.php"><span  class="naviProductBlack">Register Products</span></a></div><span  class="e91_100">Settings</span><span  class="e91_101">Messages</span>
       <div class=e91_102><span  class="e91_103">Logo</span></div>
     </div>
   </div>
