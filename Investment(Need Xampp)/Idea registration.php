@@ -1,7 +1,7 @@
 <?php
 
 require('connect.php');
-
+ini_set("display_errors", "off");
 if(isset($_POST['idearegister']))
 {
   $Title = htmlspecialchars($_POST['ideaname']);
@@ -132,6 +132,7 @@ if(isset($_POST['ideaupdate']))
   $MinorSector = htmlspecialchars($_POST['minorsector']);
   $Region = htmlspecialchars($_POST['region']);
   $Country = htmlspecialchars($_POST['country']);
+  $Updated_at = date("Y-m-d H:i:s"); 
 
   $select = "SELECT * FROM investment_products";
   $ret = mysql_query($select);
@@ -148,7 +149,7 @@ if(isset($_POST['ideaupdate']))
     {
 
       $update = "UPDATE investment_ideas
-      SET Title='$Title',Author='$AuthorName',Abstract='$Abstract',Published_date='$PublishDate',Expiry_date='$ExpiryDate',Content='$Content',Risk_Rating='$RiskRating',Instruments='$Instruments',Currency='$Currency',Major_Sector='$MajorSector',Minor_Sector='$MinorSector',Region='$Region',Country='$Country', ProductID='$ProductID'
+      SET Title='$Title',Author='$AuthorName',Abstract='$Abstract',Published_date='$PublishDate',Expiry_date='$ExpiryDate',Content='$Content',Risk_Rating='$RiskRating',Instruments='$Instruments',Currency='$Currency',Major_Sector='$MajorSector',Minor_Sector='$MinorSector',Region='$Region',Country='$Country', ProductID='$ProductID', Updated_at='$Updated_at'
       WHERE Ideas_ID=$IdeasID";
       $run= mysql_query($update);
       break;
@@ -160,7 +161,7 @@ if(isset($_POST['ideaupdate']))
   {
 
     $update = "UPDATE investment_ideas
-      SET Title='$Title',Author='$AuthorName',Abstract='$Abstract',Published_date='$PublishDate',Expiry_date='$ExpiryDate',Content='$Content',Risk_Rating='$RiskRating',Instruments='$Instruments',Currency='$Currency',Major_Sector='$MajorSector',Minor_Sector='$MinorSector',Region='$Region',Country='$Country'
+      SET Title='$Title',Author='$AuthorName',Abstract='$Abstract',Published_date='$PublishDate',Expiry_date='$ExpiryDate',Content='$Content',Risk_Rating='$RiskRating',Instruments='$Instruments',Currency='$Currency',Major_Sector='$MajorSector',Minor_Sector='$MinorSector',Region='$Region',Country='$Country', Updated_at='$Updated_at'
       WHERE Ideas_ID=$IdeasID";
       $run= mysql_query($update);
   }
