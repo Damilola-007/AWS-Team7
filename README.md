@@ -12,4 +12,4 @@ WireFrame: https://www.figma.com/proto/19AviCvFwjvfZdtMeOAaAX/Digital-Investment
 
 How To Use Investment(Xampp) folder,
 
-Please download the latest versions. To use them, you just have to move the folder to C:\Xampp\htdocs\ and rename it to "Investment" afterwards run Xampp apache, sql servers and enter "localhost/investment/" as URL in browser and open the page from there and also update the database by deleting all the tables and importing "investment.sql" file again via "localhost:/phpmyadmin".
+Please download the latest versions. You can check what file or folder is latest version by checking the time beside them. To use "Investment(Xampp)" folder, you just have to move the folder to C:\Xampp\htdocs\ and rename it to "Investment" afterwards run Xampp apache, sql servers and enter "localhost/investment/" as URL in browser and open the page from there and also update the database by deleting all the tables and importing "investment.sql" file again via "localhost:/phpmyadmin".
