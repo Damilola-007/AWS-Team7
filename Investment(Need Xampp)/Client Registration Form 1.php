@@ -1,11 +1,12 @@
 <?php
+ini_set("display_errors", "off");
 if(isset($_POST['clientregister']))
 {
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$password = $_POST['password'];
+$firstname = htmlspecialchars($_POST['firstname']);
+$lastname = htmlspecialchars($_POST['lastname']);
+$password = htmlspecialchars($_POST['password']);
 $passwordhash = password_hash($password, PASSWORD_DEFAULT);
-$email = $_POST['email'];
+$email = htmlspecialchars($_POST['email']);
 setcookie("firstname", $firstname, time()+3600);
 setcookie("lastname", $lastname, time()+3600);
 setcookie("password", $passwordhash, time()+3600);
