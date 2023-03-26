@@ -1,12 +1,13 @@
 <?php
+ini_set("display_errors", "off");
 if(isset($_POST['clientregister']))
 {
-$phone_number = $_POST['Phone'];
-$address = $_POST['Address'];
-$city = $_POST['City'];
-$state = $_POST['State'];
-$country = $_POST['country'];
-$postal_code = $_POST['postcode'];
+$phone_number = htmlspecialchars($_POST['Phone']);
+$address = htmlspecialchars($_POST['Address']);
+$city = htmlspecialchars($_POST['City']);
+$state = htmlspecialchars($_POST['State']);
+$country = htmlspecialchars($_POST['country']);
+$postal_code = htmlspecialchars($_POST['postcode']);
 setcookie("phone_number", $phone_number, time()+3600);
 setcookie("address", $address, time()+3600);
 setcookie("city", $city, time()+3600);
