@@ -167,7 +167,7 @@ echo "<script>
                                 </div>
                                 
     <!-- <script src="verificationPage.js"></script> -->
-    <script src="js/registrationPage.js"></script>
+    <script src="registrationPage.js"></script>
     <script src="js/storeRegistration.js"></script>
 </body>
 </html>
