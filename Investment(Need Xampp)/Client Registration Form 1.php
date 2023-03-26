@@ -113,7 +113,7 @@ echo "<script>
                                 </div>
                                 <div class="v90_44"><label for="password"><span class="v90_45">Password</span>
                                 <div>
-                                    <input type="password" class="v90_46" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}" title="Please enter at least one lowercase and uppercase character with number between 4 to 8 characters " required>
+                                    <input type="password" class="v90_46" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters " required>
                                     <!--<p id="password-message"></p>
                                     <div id="password-requirements" class="password-requirements">
                                       <ul>
