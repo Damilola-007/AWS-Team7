@@ -154,11 +154,11 @@ echo "<script>
                                                  
                                      <!--
                             <div class="v85_21">
-                                <a href="verification.html">
+                                
                                   <button class="v85_22" type="submit" onclick="displayVerificationMessage()">
                                     <span class="v85_21"></span>NEXT</span>
                                   </button>
-                                </a>
+                                
                               </div>
 
                             -->
