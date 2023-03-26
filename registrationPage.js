@@ -84,6 +84,45 @@ function checkPasswordStrength(password) {
       number: /\d/,
       special: /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/
     };
+    //add the password rule condition
+
+    // Validate the password
+    /*
+  if (
+    regex.lowercase.test(password) &&
+    regex.uppercase.test(password) &&
+    regex.number.test(password) &&
+    regex.special.test(password)
+  ) {
+    return "strong";
+  } else {
+    return "weak";
+  }
+  */
+
+  // Define a variable to keep track of the number of requirements met
+  var count = 0;
+  // Check if the password meets each requirement
+  if (regex.lowercase.test(password)) {
+    count++;
+  }
+  if (regex.uppercase.test(password)) {
+    count++;
+  }
+  if (regex.number.test(password)) {
+    count++;
+  }
+  if (regex.special.test(password)) {
+    count++;
+  }
+  // Check if all requirements are met
+  if (count == 4) {
+    return true;
+  } else {
+    alert("Your password must contain at least one lowercase letter, one uppercase letter, one number, and one special character.");
+    return false;
+  }
+
     
     var strength = 0;
     
