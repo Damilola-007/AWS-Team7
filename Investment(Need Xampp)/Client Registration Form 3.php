@@ -107,11 +107,13 @@ if($run)
         <div>
           <input class="e440_290" type="text" name="investment_goal" id="investment_goal">
         </div>
+        <!--
         <div class=e443_5><label for="personality"><span  class="e443_6">Personality</span></label>
           <div>
             <input class="e443_7" type="text" name="personality" id="personality">
           </div>
         </div>
+        -->
       </div>
       <div class=e440_291><span  class="e440_292">Risk Tolerance</span>
         <div>
