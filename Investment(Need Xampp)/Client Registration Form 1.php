@@ -107,13 +107,13 @@ echo "<script>
                                 </div>
                                 <div class="v90_40"><label for="email"><span class="v90_41">Email Address</span>
                                  <div>
-                                    <input type="text" class="v90_42" placeholder="example@gmail.com" id="email" name="email" required>
+                                    <input type="email" class="v90_42" placeholder="example@gmail.com" id="email" name="email" required>
                                     </label>
                                 </div>
                                 </div>
                                 <div class="v90_44"><label for="password"><span class="v90_45">Password</span>
                                 <div>
-                                    <input type="password" class="v90_46" name="password" id="password" required>
+                                    <input type="password" class="v90_46" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}" title="Please enter at least one lowercase and uppercase character with number between 4 to 8 characters " required>
                                     <!--<p id="password-message"></p>
                                     <div id="password-requirements" class="password-requirements">
                                       <ul>
@@ -141,12 +141,12 @@ echo "<script>
                                 </div>
                                 <div class="v85_21">
                                 <!--Code to display welcome message after registration-->
-                              <a href="verification.html">
+                              
                                 <!-- <button class="v85_22" type="submit" onclick="displayVerificationMessage()">-->
                                  <button class="v85_22" type="submit" name="clientregister" formmethod="post">
                                    <span class="v85_21"></span>NEXT</span>
                                  </button>
-                               </a>
+                              
                                 </div>
                             </div>
                             
@@ -154,11 +154,11 @@ echo "<script>
                                                  
                                      <!--
                             <div class="v85_21">
-                                
+                                <a href="verification.html">
                                   <button class="v85_22" type="submit" onclick="displayVerificationMessage()">
                                     <span class="v85_21"></span>NEXT</span>
                                   </button>
-                                
+                                </a>
                               </div>
 
                             -->
@@ -167,7 +167,7 @@ echo "<script>
                                 </div>
                                 
     <!-- <script src="verificationPage.js"></script> -->
-    <script src="registrationPage.js"></script>
+    <script src="js/confirmpassword.js"></script>
     <script src="js/storeRegistration.js"></script>
 </body>
 </html>
