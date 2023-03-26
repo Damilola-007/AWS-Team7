@@ -1,6 +1,7 @@
 <?php
 // Set up database connection
 require('connect.php');
+ini_set("display_errors", "off");
 // Retrieve the user's registration data from the form
 if(isset($_POST['clientregister']))
 {
@@ -15,15 +16,15 @@ $city = $_COOKIE['city'];
 $state = $_COOKIE['state'];
 $country = $_COOKIE['country'];
 $postal_code = $_COOKIE['postal_code'];
-$account_type = $_POST['account_type'];
-$investment_style = $_POST['investment_style'];
-$investment_goal = $_POST['investment_goal'];
-$investment_horizon = $_POST['investment_horizon'];
-$occupation = $_POST['occupation'];
-$annual_income = $_POST['annual_income'];
-$risk_tolerance = $_POST['risk_tolerance'];
-$net_worth = $_POST['net_worth'];
-$investment_amount = $_POST['investment_amount'];
+$account_type = htmlspecialchars($_POST['account_type']);
+$investment_style = htmlspecialchars($_POST['investment_style']);
+$investment_goal = htmlspecialchars($_POST['investment_goal']);
+$investment_horizon = htmlspecialchars($_POST['investment_horizon']);
+$occupation = htmlspecialchars($_POST['occupation']);
+$annual_income = htmlspecialchars($_POST['annual_income']);
+$risk_tolerance = htmlspecialchars($_POST['risk_tolerance']);
+$net_worth = htmlspecialchars($_POST['net_worth']);
+$investment_amount = htmlspecialchars($_POST['investment_amount']);
 $created_at = date("Y-m-d H:i:s");
 
 // Add additional variables for other user details here
