@@ -64,9 +64,9 @@ form.addEventListener("submit", function(event) {
   }
 
   // If form is valid, redirect to verification page
-  /*if (isValid) {
+  if (isValid) {
     window.location.href = "verification.html";
-  }*/
+  }
 });
 
 // Function to validate email address
