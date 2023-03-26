@@ -35,6 +35,16 @@ $run= mysql_query($insert);
 
 if($run)
   {
+    setcookie("firstname", "", time()-3600);
+    setcookie("lastname", "", time()-3600);
+    setcookie("password", "", time()-3600);
+    setcookie("email", "", time()-3600);
+    setcookie("phone_number", "", time()-3600);
+    setcookie("address", "", time()-3600);
+    setcookie("city", "", time()-3600);
+    setcookie("state", "", time()-3600);
+    setcookie("country", "", time()-3600);
+    setcookie("postal_code", "", time()-3600);
     echo "<script>window.alert('Client Registration successful')
     window.location ='Client Registration Form 3.php'</script>";
   }
