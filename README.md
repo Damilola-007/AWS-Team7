@@ -10,6 +10,6 @@ Client Registration, CRUD Product, Idea
 
 WireFrame: https://www.figma.com/proto/19AviCvFwjvfZdtMeOAaAX/Digital-Investment-ideas-(Copy)-(Copy)?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1
 
-How To Use Investment(Xampp) folder,
+How To Use Investment(Need Xampp) folder,
 
-Please download the latest versions. You can check what file or folder is latest version by checking the uploaded time beside them. To use "Investment(Xampp)" folder, you just have to move the folder to C:\Xampp\htdocs\ and rename it to "Investment" afterwards run Xampp apache, sql servers and enter "localhost/investment/" as URL in browser and open the page from there and also update the database by deleting all the tables and importing "investment.sql" file again via "localhost/phpmyadmin".
+Please download the latest versions. You can check what file or folder is latest version by checking the uploaded time beside them. To use "Investment(Need Xampp)" folder, you just have to move the folder to C:\Xampp\htdocs\ and rename it to "Investment" afterwards run Xampp apache, sql servers and enter "localhost/investment/" as URL in browser and open the page from there and also update the database by deleting all the tables and importing "investment.sql" file again via "localhost/phpmyadmin".
