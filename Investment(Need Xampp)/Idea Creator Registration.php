@@ -1,6 +1,7 @@
 <?php
 // Set up database connection
 require('connect.php');
+//Turn off SQL related errors
 ini_set("display_errors", "off");
 // Retrieve the user's registration data from the form
 if(isset($_POST['creator_register']))
