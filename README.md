@@ -10,7 +10,7 @@ Client Registration, CRUD Product, Idea, Idea Creator Registration, RM dashboard
 
 Need to be done
 
-Client dashboard(mandatory), RM able to match Client and Ideas(mandatory), Client, RM and Idea Creator Profile with Edit options
+Client, RM and Idea Creator being able to login(mandatory), Client dashboard(mandatory), RM able to match Client and Ideas(mandatory), Client, RM and Idea Creator Profile with Edit options
 
 WireFrame: https://www.figma.com/proto/19AviCvFwjvfZdtMeOAaAX/Digital-Investment-ideas-(Copy)-(Copy)?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1
 
