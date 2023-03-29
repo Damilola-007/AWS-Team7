@@ -440,6 +440,7 @@ else
     AND Title LIKE '%$searchword%'
     OR Author LIKE '%$searchword%'
     OR Product_Type LIKE '%$searchword%'
+    OR Instruments LIKE '%$searchword%'
     OR Currency LIKE '%$searchword%'
     OR Major_Sector LIKE '%$searchword%'
     OR Minor_Sector LIKE '%$searchword%'
