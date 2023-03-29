@@ -4,6 +4,11 @@ require('connect.php');
 //Turn off SQL related errors
 ini_set("display_errors", "off");
 
+//Reload the page so the cookies are properly enabled for first time user
+if(!isset($_COOKIE['dash']))
+{
+  header( "refresh:0;url=RM Dashboard.php" );
+}
 ?>
 <html lang="en">
           <head>
