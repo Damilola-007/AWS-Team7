@@ -21,6 +21,20 @@ ini_set("display_errors", "off");
             <style>
             /* Change button color based on what has been clicked */
             <?php
+              if($_COOKIE["dash"]=="client")
+                {
+
+                  echo ".dash_client_button{background-color:rgba(0, 0, 0, 1); color:white;}";
+                  echo ".dash_idea_button{background-color:rgba(0, 0, 0, 0); color:black;}";
+                           
+
+                }
+                if($_COOKIE["dash"]=="idea")
+                {
+                  echo ".dash_client_button{background-color:rgba(0, 0, 0, 0); color:black;}";
+                  echo ".dash_idea_button{background-color:rgba(0, 0, 0, 1); color:white;}";
+                  
+                }
             
               if(isset($_POST['client']))
               {
