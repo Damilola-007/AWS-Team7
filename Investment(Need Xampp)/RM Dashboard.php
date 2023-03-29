@@ -343,7 +343,8 @@ if(isset($_POST['btnsearch']))
     OR Investment_style LIKE '%$searchword%'
     OR Investment_goal LIKE '%$searchword%'
     OR Investment_horizon LIKE '%$searchword%'
-    OR Employment_status LIKE '%$searchword%'";
+    OR Employment_status LIKE '%$searchword%'
+    OR Risk_tolerance LIKE '%$searchword%'";
     $ret = mysql_query($select);
     $count= mysql_num_rows($ret);
 
