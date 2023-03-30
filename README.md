@@ -5,7 +5,7 @@ Assignment Title: Investment web application
 
 Currently done things
 
-User stories, database tables and attributes, ERD and Flowchart(Needs edit because of Idea Creator) draft: https://docs.google.com/document/d/1rUv03_aK90nE8hJVHSn78OLdt3iSYCkMu3JLtUpHmQ8/edit
+User stories, database tables and attributes, ERD and Flowchart(Added Idea Creator) draft: https://docs.google.com/document/d/1rUv03_aK90nE8hJVHSn78OLdt3iSYCkMu3JLtUpHmQ8/edit
 Client Registration, CRUD Product, Idea, Idea Creator Registration, RM dashboard
 
 Need to be done
