@@ -57,6 +57,7 @@ if(!isset($_SESSION['CreatorID']))
     <th>Published Date</th>
     <th>Expiry Date</th>
     <th>Content</th>
+    <th>Product Name</th>
     <th>Product Type</th>
     <th>Risk Rating</th>
     <th>Instruments</th>
@@ -85,7 +86,7 @@ if(!isset($_SESSION['CreatorID']))
     $PublishDate = $data['Published_date'];
     $ExpiryDate = $data['Expiry_date'];
     $Content = $data['Content'];
-    $ProductName = $data['Product_Name'];
+    $Product_Name = $data['Product_Name'];
     $Product_type = $data['Product_Type'];
     $RiskRating = $data['Risk_Rating'];
     $Instruments = $data['Instruments'];
@@ -144,7 +145,8 @@ if(!isset($_SESSION['CreatorID']))
       echo "<td>".$Content."</td>";
     }
 
-    echo "<td>".$Product_type."<br>(".$ProductName.")"."</td>";
+    echo "<td>".$Product_Name."</td>";
+    echo "<td>".$Product_type."</td>";
     echo "<td>".$RiskRating."</td>";
     echo "<td>".$Instruments."</td>";
     echo "<td>".$Currency."</td>";
