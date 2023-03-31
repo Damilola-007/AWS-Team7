@@ -8,8 +8,8 @@ ini_set("display_errors", "off");
 //Check if Login button has been pressed
 if(isset($_POST['btnlogin']))
 {
-    $Email = $_POST['email'];
-    $Password = $_POST['password'];
+    $Email = htmlspecialchars($_POST['email']);
+    $Password = htmlspecialchars($_POST['password']);
 
 //Get Email from client table in database
   $select = "SELECT * FROM client
