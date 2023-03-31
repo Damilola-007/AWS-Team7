@@ -34,6 +34,7 @@ if(isset($_POST['btnlogin']))
 
             else
             {
+              //Check how many times userinput was wrong
                 if(!isset($_SESSION['count']))
                 {
                   $_SESSION['count']=1;
@@ -88,6 +89,7 @@ if(isset($_POST['btnlogin']))
 
         else
             {
+              //Check how many times userinput was wrong
                if(!isset($_SESSION['count']))
                 {
                   $_SESSION['count']=1;
@@ -139,6 +141,7 @@ if(isset($_POST['btnlogin']))
 
         else
             {
+              //Check how many times userinput was wrong
                 if(!isset($_SESSION['count']))
                 {
                   $_SESSION['count']=1;
