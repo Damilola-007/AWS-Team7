@@ -179,7 +179,7 @@ if(isset($_POST['btnlogin']))
         />
         <link rel="stylesheet" href="css/styles.css" />
         <title>Login</title>
-
+<!--Script for countdown timer-->
         <script type="text/javascript">
 
       var seconds = 300;
@@ -267,6 +267,7 @@ if(isset($_POST['btnlogin']))
                 <!--Form for the login page-->
                 <!--form action="">-->
                 <?php
+                //Make the form uneditable if the user has entered wrong three times
                  if(isset($_SESSION['check']))
                   {
                 ?>
@@ -321,6 +322,7 @@ if(isset($_POST['btnlogin']))
                     
                 </form>
                 <?php
+                //Revert the form to editable again after waiting for 5 minutes
                 unset($_SESSION['check']);
                 }
 
