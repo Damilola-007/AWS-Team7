@@ -45,7 +45,7 @@ if($run)
     setcookie("country", "", time()-3600);
     setcookie("postal_code", "", time()-3600);
     echo "<script>window.alert('Client Registration successful')
-    window.location ='Client Registration Form 1.php'</script>";
+    window.location ='Login.php'</script>";
   }
 
   else
