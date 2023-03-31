@@ -36,6 +36,7 @@ if(isset($_POST['btnlogin']))
             {
                 echo "<script>window.alert('Please enter valid Password')</script>";
                 echo "<script>window.location = 'Login.php'</script>";
+                $_SESSION['scount']+=1;
             } 
 
     }
@@ -71,6 +72,7 @@ if(isset($_POST['btnlogin']))
             {
                 echo "<script>window.alert('Please enter valid Password')</script>";
                 echo "<script>window.location = 'Login.php'</script>";
+                $_SESSION['scount']+=1;
             } 
     }
 
@@ -103,6 +105,7 @@ if(isset($_POST['btnlogin']))
             {
                 echo "<script>window.alert('Please enter valid Password')</script>";
                 echo "<script>window.location = 'Login.php'</script>";
+                $_SESSION['scount']+=1;
             } 
 
     }
