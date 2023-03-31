@@ -84,7 +84,7 @@ if (isset($_GET['ProductID']))
     catch(Exception $e)
     {
     echo "<script>window.alert('Please delete the Idea associated with Product first!')
-    window.location ='Product Edit.php'</script>";
+    window.location ='Idea Edit.php'</script>";
     }
   }
 
