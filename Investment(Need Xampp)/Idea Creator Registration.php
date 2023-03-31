@@ -43,7 +43,7 @@ if($run)
   {
     
     echo "<script>window.alert('Creator Registration successful')
-    window.location ='Idea Creator Registration.php'</script>";
+    window.location ='Login.php'</script>";
   }
 
   else
