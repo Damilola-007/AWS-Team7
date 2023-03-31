@@ -182,6 +182,11 @@ if(isset($_POST['btnlogin']))
         />
         <link rel="stylesheet" href="css/styles.css" />
         <title>Login</title>
+
+<!--Script to prevent browser back button-->
+
+<script type="text/javascript">window.history.forward()</script>
+
 <!--Script for countdown timer-->
         <script type="text/javascript">
 
@@ -341,7 +346,7 @@ if(isset($_POST['btnlogin']))
 
                         <div>
                             <input
-                                type="text"
+                                type="email"
                                 class="v91_160"
                                 name="email"
                                 id="email"
