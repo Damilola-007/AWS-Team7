@@ -124,7 +124,7 @@ if(!isset($_COOKIE['dash']))
   <div class="e1_65"></div><span  class="e1_78">Explore clients and investments ideas to match</span>
   <div class=e1_74>
     <div class="e1_66"></div><span  class="e1_69">Home</span>
-    <div class=e1_125><a href="RM Dashboard.php"><span  class="e1_70">Dashboard</span></a></div><span  class="e1_76">Evaluate Ideas</span><span  class="e1_77">Settings</span><span  class="e1_131">Messages</span>
+    <div class=e1_125><a href="RM Dashboard.php"><span  class="e1_70">Dashboard</span></a></div><span  class="e1_76">Evaluate Ideas</span><a href="Logout.php"><span  class="e1_77">Log out</span></a><span  class="e1_131">Messages</span>
     <div class=e1_71><span  class="e1_72">Logo</span></div>
   </div>
   <div class=e91_243><span  class="e1_68">RM Dashboard</span>
