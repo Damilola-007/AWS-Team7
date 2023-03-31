@@ -34,9 +34,27 @@ if(isset($_POST['btnlogin']))
 
             else
             {
-                echo "<script>window.alert('Please enter valid Password')</script>";
-                echo "<script>window.location = 'Login.php'</script>";
-                $_SESSION['scount']+=1;
+                if(!isset($_SESSION['count']))
+                {
+                  $_SESSION['count']=1;
+                }
+
+                else
+                {
+                  $_SESSION['count']+=1;
+                }   
+
+                if($_SESSION['count']>=3)
+                {
+                  echo "<script>window.alert('Wrong Three times! Please Log in again after five minutes')</script>";
+                  $_SESSION['check']=1;
+                }
+
+                else
+                {
+                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.location = 'Login.php'</script>";
+                }
             } 
 
     }
@@ -70,9 +88,27 @@ if(isset($_POST['btnlogin']))
 
         else
             {
-                echo "<script>window.alert('Please enter valid Password')</script>";
-                echo "<script>window.location = 'Login.php'</script>";
-                $_SESSION['scount']+=1;
+               if(!isset($_SESSION['count']))
+                {
+                  $_SESSION['count']=1;
+                }
+
+                else
+                {
+                  $_SESSION['count']+=1;
+                }   
+
+                if($_SESSION['count']>=3)
+                {
+                  echo "<script>window.alert('Wrong Three times! Please Log in again after five minutes')</script>";
+                  $_SESSION['check']=1;
+                }
+
+                else
+                {
+                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.location = 'Login.php'</script>";
+                }
             } 
     }
 
@@ -103,9 +139,27 @@ if(isset($_POST['btnlogin']))
 
         else
             {
-                echo "<script>window.alert('Please enter valid Password')</script>";
-                echo "<script>window.location = 'Login.php'</script>";
-                $_SESSION['scount']+=1;
+                if(!isset($_SESSION['count']))
+                {
+                  $_SESSION['count']=1;
+                }
+
+                else
+                {
+                  $_SESSION['count']+=1;
+                }   
+
+                if($_SESSION['count']>=3)
+                {
+                  echo "<script>window.alert('Wrong Three times! Please Log in again after five minutes')</script>";
+                  $_SESSION['check']=1;
+                }
+
+                else
+                {
+                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.location = 'Login.php'</script>";
+                }
             } 
 
     }
@@ -114,17 +168,17 @@ if(isset($_POST['btnlogin']))
   {
 
 //Check how many times userinput was wrong
-    if(!isset($_SESSION['scount']))
+    if(!isset($_SESSION['count']))
     {
-      $_SESSION['scount']=1;
+      $_SESSION['count']=1;
     }
 
     else
     {
-      $_SESSION['scount']+=1;
+      $_SESSION['count']+=1;
     }   
    
-    if($_SESSION['scount']>=3)
+    if($_SESSION['count']>=3)
     {
       echo "<script>window.alert('Wrong Three times! Please Log in again after five minutes')</script>";
       $_SESSION['check']=1;
@@ -147,17 +201,17 @@ if(isset($_POST['btnlogin']))
   else
     {
 
-      if(!isset($_SESSION['ccount']))
+      if(!isset($_SESSION['count']))
     {
-      $_SESSION['ccount']=1;
+      $_SESSION['count']=1;
     }
 
     else
     {
-      $_SESSION['ccount']+=1;
+      $_SESSION['count']+=1;
     }   
 
-    if($_SESSION['ccount']>=3)
+    if($_SESSION['count']>=3)
     {
    
       echo "<script>window.alert('Wrong Three times! Please Log in again after five minutes')</script>";
