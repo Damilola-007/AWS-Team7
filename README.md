@@ -18,4 +18,4 @@ How To Use Investment(Need Xampp) folder,
 
 Please download the latest versions. You can check what file or folder is latest version by checking the uploaded time beside them. To use "Investment(Need Xampp)" folder, you just have to move the folder to C:\Xampp\htdocs\ and rename it to "Investment" afterwards run Xampp apache, sql servers and enter "localhost/investment/" as URL in browser and open the page from there and also update the database by deleting all the tables and importing "investment.sql" file again via "localhost/phpmyadmin".
 
-Note: All the hashed password in the database translates to "Test1234" except Product Idea Creator
+Note: All the hashed password in the database translates to "Test1234"
