@@ -238,6 +238,7 @@ if(!isset($_COOKIE['dash']))
     <th>Published Date</th>
     <th>Expiry Date</th>
     <th>Content</th>
+    <th>Product Name</th>
     <th>Product Type</th>
     <th>Risk Rating</th>
     <th>Instruments</th>
@@ -276,6 +277,7 @@ if(!isset($_COOKIE['dash']))
     $PublishDate = $data['Published_date'];
     $ExpiryDate = $data['Expiry_date'];
     $Content = $data['Content'];
+    $Product_Name = $data['Product_Name'];
     $Product_type = $data['Product_Type'];
     $RiskRating = $data['Risk_Rating'];
     $Instruments = $data['Instruments'];
@@ -334,6 +336,7 @@ if(!isset($_COOKIE['dash']))
       echo "<td>".$Content."</td>";
     }
 
+    echo "<td>".$Product_Name."</td>";
     echo "<td>".$Product_type."</td>";
     echo "<td>".$RiskRating."</td>";
     echo "<td>".$Instruments."</td>";
@@ -496,6 +499,7 @@ else
     <th>Published Date</th>
     <th>Expiry Date</th>
     <th>Content</th>
+    <th>Product Name</th>
     <th>Product Type</th>
     <th>Risk Rating</th>
     <th>Instruments</th>
@@ -520,6 +524,7 @@ else
     $PublishDate = $data['Published_date'];
     $ExpiryDate = $data['Expiry_date'];
     $Content = $data['Content'];
+    $Product_Name = $data['Product_Name'];
     $Product_type = $data['Product_Type'];
     $RiskRating = $data['Risk_Rating'];
     $Instruments = $data['Instruments'];
@@ -578,6 +583,7 @@ else
       echo "<td>".$Content."</td>";
     }
 
+    echo "<td>".$Product_Name."</td>";
     echo "<td>".$Product_type."</td>";
     echo "<td>".$RiskRating."</td>";
     echo "<td>".$Instruments."</td>";
@@ -694,6 +700,7 @@ if($_COOKIE["dash"]=="idea")
     <th>Published Date</th>
     <th>Expiry Date</th>
     <th>Content</th>
+    <th>Product Name</th>
     <th>Product Type</th>
     <th>Risk Rating</th>
     <th>Instruments</th>
@@ -732,6 +739,7 @@ if($_COOKIE["dash"]=="idea")
     $PublishDate = $data['Published_date'];
     $ExpiryDate = $data['Expiry_date'];
     $Content = $data['Content'];
+    $Product_Name = $data['Product_Name'];
     $Product_type = $data['Product_Type'];
     $RiskRating = $data['Risk_Rating'];
     $Instruments = $data['Instruments'];
@@ -790,6 +798,7 @@ if($_COOKIE["dash"]=="idea")
       echo "<td>".$Content."</td>";
     }
 
+    echo "<td>".$Product_Name."</td>";
     echo "<td>".$Product_type."</td>";
     echo "<td>".$RiskRating."</td>";
     echo "<td>".$Instruments."</td>";
