@@ -473,6 +473,7 @@ else
     INNER JOIN investment_products ip ON ( ip.ProductID = id.ProductID )
     WHERE Title LIKE '%$searchword%'
     OR Author LIKE '%$searchword%'
+    OR Product_Name LIKE '%$searchword%'
     OR Product_Type LIKE '%$searchword%'
     OR Instruments LIKE '%$searchword%'
     OR Currency LIKE '%$searchword%'
