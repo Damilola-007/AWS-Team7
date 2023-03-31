@@ -466,9 +466,9 @@ else
 
     //Retrieve data from the database and match it with search input
     $searchword = $_POST['txtsearch'];
-    $select = "SELECT DISTINCT * FROM investment_products, investment_ideas
-    WHERE investment_products.ProductID=investment_ideas.ProductID
-    AND Title LIKE '%$searchword%'
+    $select = "SELECT DISTINCT * FROM investment_ideas id
+    INNER JOIN investment_products ip ON ( ip.ProductID = id.ProductID )
+    WHERE Title LIKE '%$searchword%'
     OR Author LIKE '%$searchword%'
     OR Product_Type LIKE '%$searchword%'
     OR Instruments LIKE '%$searchword%'
@@ -476,7 +476,8 @@ else
     OR Major_Sector LIKE '%$searchword%'
     OR Minor_Sector LIKE '%$searchword%'
     OR Region LIKE '%$searchword%'
-    OR Country LIKE '%$searchword%'";
+    OR Country LIKE '%$searchword%'
+    GROUP BY Ideas_ID";
     $ret = mysql_query($select);
     $count= mysql_num_rows($ret);
 
