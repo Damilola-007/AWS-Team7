@@ -255,7 +255,7 @@ if(isset($_POST['btnlogin']))
 
                     <span class="v91_148"
                         >Don’t Have an account?
-                        <a href="Client Registration Form 1.php">Create an Account</a></span
+                        <a href="HomePage.php">Create an Account</a></span
                     >
                 </div>
 
