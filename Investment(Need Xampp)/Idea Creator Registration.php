@@ -7,6 +7,7 @@ ini_set("display_errors", "off");
 if(isset($_POST['creator_register']))
 {
   $CreatorName = htmlspecialchars($_POST['creatorname']);
+  $emailcheck = $_POST['email'];
   $Email = htmlspecialchars($_POST['email']);
   $Password = htmlspecialchars($_POST['password']);
   $Passwordhash = password_hash($Password, PASSWORD_DEFAULT);//Hash the password
@@ -18,6 +19,21 @@ if(isset($_POST['creator_register']))
   $Work_Experience = htmlspecialchars($_POST['work_experience']);
   $Education = htmlspecialchars($_POST['education']);
 
+  $select = "SELECT Email FROM client
+  UNION SELECT Email FROM relationship_manager
+  UNION SELECT Email FROM product_idea_creator";
+  $run = mysql_query($select);
+  $row=mysql_fetch_array($run);
+  $databaseEmail = $row['Email'];
+
+if($emailcheck == $databaseEmail)
+{
+    echo "<script>window.alert('This Email is already registered')</script>";
+    echo "<script>window.location.assign('Idea Creator Registration.php')</script>";
+}
+
+else
+{
 // Store the user's registration data in the database
 $insert = "INSERT INTO product_idea_creator (Creator_Name, Email, Password, Phone_Number, Website, LinkedIn, Industry, Skills, Work_Experience, Education ) 
   VALUES ('$CreatorName', '$Email', '$Passwordhash', '$Phone_Number', '$Website', '$LinkedIn', '$Industry',  '$Skills',  '$Work_Experience', '$Education')";
@@ -36,7 +52,7 @@ if($run)
     window.location ='Idea Creator Registration.php'</script>";
     echo mysql_error();
   }
-
+}
 }
 ?>
 <!DOCTYPE html>
