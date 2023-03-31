@@ -129,7 +129,7 @@ if(isset($_POST['btnlogin']))
 
     else
     {   
-      echo "<script>window.alert('Please enter IC valid Email')</script>";
+      echo "<script>window.alert('Please enter valid Email')</script>";
       echo "<script>window.location = 'Login.php'</script>";
 
     }
