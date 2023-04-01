@@ -1,0 +1,95 @@
+
+ <?php
+
+ require('connect.php');
+ ini_set("display_errors", "off");
+ if(isset($_POST['productregister']))
+ {
+   $EmailAddress = htmlspecialchars($_POST['emailaddress']);
+   $Password = htmlspecialchars($_POST['password']);
+   $ConfirmPassword = htmlspecialchars($_POST['confirmpassword']);
+   $PhoneNumber = htmlspecialchars($_POST['phonenumber']);
+   $Location = htmlspecialchars($_POST['location']);
+   $Bio = htmlspecialchars($_POST['bio']);
+ 
+   $insert = "INSERT INTO investment_products(Email_Address,Password,Confirm_Password,Phone_Number,Location,Bio)
+   VALUES ('$Email_Address','$Password','$Confirm_Password','$Phone_Number','$Location','$Bio')";
+ 
+   $run= mysql_query($insert);
+ 
+   if($run)
+   {
+     echo "<script>window.alert('Product added successfully')
+     window.location ='Product registration.php'</script>";
+   }
+ 
+   else
+   {
+     echo "<script>window.alert('Something went wrong')
+     window.location ='Product registration.php'</script>";
+     echo mysql_error();
+   }
+ }
+ ?>                                      
+                       
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Mulish&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Rm registration.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class=e396_29>
+        <div class="e396_30"></div>
+        <div class=e396_31>
+          <div class=e396_32>
+            <div class="e396_33"></div>
+            <div class="e396_34"></div>
+            <div class="e396_35"></div>
+          </div>
+          <div class=e396_36><span  class="e396_37">Trusted Digital Investment Ideas Platform</span><span  class="e396_38">Trusted Digital Investment Ideas Platform hshjd djjsh dhjshs ghf</span></div>
+        </div>
+        <div class=e396_49>
+          <div class="e396_50"></div>
+          <div class="e420_4"></div>
+          <div class="e420_9"></div>
+          <div class="e420_7"></div>
+          <div class=e396_51><span  class="e396_52">CONTINUE</span></div>
+          <div class=e396_53><span  class="e396_54">Create an Account</span><span  class="e396_55">Set up your account and start exploring investment ideas. </span></div>
+          <div class=e396_56>
+            <div class="e396_57"></div><span  class="e396_58">Already Have an account? Login</span>
+          </div>
+          <div class=e396_59>
+            <div class="e396_60"></div><span  class="e396_61">Logo</span>
+          </div>
+          <div class=e396_68><span  class="e396_69">Email Address</span></div>
+          <div > <input class="e396_70" type="text" name="" id=""></div>
+          <div  class=e396_71><span  class="e396_72">Password</span>
+            <div> <input class="e396_73" type="text" name="" id=""> </div>
+          </div>
+          <div class=e396_74><span  class="e396_75">Confirm Password</span>
+            <div> <input class="e396_76" type="text" name="" id=""  ></div>
+            <div class="e420_5"></div>
+          </div>
+          <div > <input class="e420_6" type="text" name=""></div>
+          <div> <input class="e420_8"></div><span  class="e420_12">Phone number </span>
+      </span><span  class="e420_17">Location</span><span  class="e420_20">Bio</span>
+        </div> <input class="e420_18" type="text" name="" id=""> </div>
+      </div>
+              
+                                
+    <!-- <script src="verificationPage.js"></script> -->
+    <script src="registrationPage.js"></script>
+    <script src="storeRegistration.js"></script>
+</body>
+</html>
+
+    
