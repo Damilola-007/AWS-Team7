@@ -5,6 +5,8 @@ session_start();
 require('connect.php');
 //Turn off SQL related errors
 ini_set("display_errors", "off");
+//Remove Confirm re-form submission message
+header("Cache-Control: no-cache, must-revalidate, max-age=0");
 //Check if Relationship Manager has logged in
 if(!isset($_SESSION['ManagerID']))
 {
