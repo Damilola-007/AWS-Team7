@@ -30,3 +30,19 @@ function showlessC(id)
   document.getElementById('show-lessC_'+id).style.display='none';
 }
 
+function readmoreD(id)
+{
+  document.getElementById('show-cutD_'+id).style.display='none';
+  document.getElementById('read-moreD_'+id).style.display='none';
+  document.getElementById('show-contentD_'+id).style.display='block';
+  document.getElementById('show-lessD_'+id).style.display='block';
+}
+
+function showlessD(id)
+{
+  document.getElementById('show-cutD_'+id).style.display='block';
+  document.getElementById('read-moreD_'+id).style.display='block';
+  document.getElementById('show-contentD_'+id).style.display='none';
+  document.getElementById('show-lessD_'+id).style.display='none';
+}
+
