@@ -5,7 +5,9 @@ session_start();
 require('connect.php');
 //Turn off SQL related errors
 ini_set("display_errors", "off");
-//Check if Relationship Manager has logged in
+//Remove Confirm re-form submission message
+header("Cache-Control: no-cache, must-revalidate, max-age=0");
+//Check if Client has logged in
 if(!isset($_SESSION['UserID']))
 {
   echo "<script>window.alert('Please login as Client to access this page!')
