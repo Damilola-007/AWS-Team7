@@ -83,31 +83,20 @@ if(!isset($_SESSION['CreatorID']))
     $ProductAddedDate = $data['Product_added_date'];
     $Status = $data['Status'];
     $ProductPrice = $data['Product_Price'];
-  //Add Read more if the text is longer than 50 characters
+
+  //Cut the Description if the text is longer than 50 characters
     if (strlen($Description) > 50) 
     {
-      $DescriptionCut = substr($Description, 0, 50) . "... <a href = 'Product Edit.php?dereadmore'>Read more</a>";
+      $DescriptionCut = substr($Description, 0, 50);
     }
 
     echo "<tr>";
     echo "<td>".$ProductName."</td>";
     echo "<td>".$ProductType."</td>";
 
-  //Replace Read more with Show less if Read more is clicked
-    if(isset($_GET['dereadmore']) && strlen($Description) > 50)
-    {
-      echo "<td>".$Description."<br><a href = 'Product Edit.php'>Show less</a></td>";
-    }
-
-    else if(strlen($Description) > 50)
-    {
-      echo "<td>".$DescriptionCut."</td>";
-    }
-
-    else
-    {
-      echo "<td>".$Description."</td>";
-    }
+  //Add Read more and show less functions for Description
+    $ID = $data['ProductID'];
+    echo "<td><span id='show-cutD_".$ID."'>".$DescriptionCut."... </span><a href='#' id='read-moreD_".$ID."' onclick='readmoreD(".$ID.");''>Read more</a><span id='show-contentD_".$ID."' style='display:none'>".$Description."<a href='#' id='show-lessD_".$ID."' onclick='showlessD(".$ID.");''>Show less</a></span></td>";
 
     echo "<td>".$ProductAddedDate."</td>";
     echo "<td>".$Status."</td>";
@@ -125,5 +114,6 @@ if(!isset($_SESSION['CreatorID']))
 </div>
  <script src="js/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="js/bootstrap.js"></script>
+ <script src="js/Readmore_Showless.js"></script>
           </body>
           </html>
