@@ -154,10 +154,139 @@ if(isset($_SESSION['UserID']))
   }
 }
 
-//Check if Client has logged in
+else if($_SESSION['ManagerID'])
+{
+
+  $ManagerID = $_SESSION['ManagerID'];
+//Retrieve the current logged in relationship manager details from database
+  $select = "SELECT * FROM relationship_manager
+  WHERE ManagerID=$ManagerID";
+  $ret = mysql_query($select);
+  $count= mysql_num_rows($ret);
+
+//Check if relationship manager has properly logged in
+  if($count==0)
+  {
+    echo "<script>window.alert('Something went wrong!')
+    window.location ='Login.php'</script>";
+  }
+
+  else
+  {
+
+    $data=mysql_fetch_array($ret);
+    $managername = $data["Manager_Name"];
+    $password = $data["Password"];
+    $email = $data["Email"];
+    $bio = $data['Biography'];
+    $phone_number = $data['Phone_Number'];
+    $location = $data['Location'];
+
+  }
+
+  //Check if Save Details button was clicked
+  if(isset($_POST['editbutton']))
+  {
+    //Get the user input from the form
+    $txtmanagername = htmlspecialchars($_POST['txtmanagername']);
+    $txtemail = htmlspecialchars($_POST['txtemail']);
+    $txtphoneno = htmlspecialchars($_POST['txtphoneno']);
+    $txtlocation = htmlspecialchars($_POST['txtlocation']);
+    $txabio = htmlspecialchars($_POST['txabio']);
+    $txtcurrentpassword = htmlspecialchars($_POST['txtcurrentpassword']);
+    $txtchangedpassword = htmlspecialchars($_POST['txtchangedpassword']);
+    $passwordhash = password_hash($txtchangedpassword, PASSWORD_DEFAULT);//Hash the password
+
+//Check the user entered old password with database password for verification
+    if(password_verify($txtcurrentpassword, $password))
+    {
+
+      //Check if the user entered new password is same with database password
+      if(password_verify($txtchangedpassword, $password))
+      {
+        echo "<script>window.alert('This password is same with current password!')
+        window.location ='Profile.php'</script>";
+      }
+
+      else
+      {
+
+      if($txtchangedpassword=="")
+      {
+        $txtchangedpassword=$txtcurrentpassword;
+        $passwordhash = password_hash($txtchangedpassword, PASSWORD_DEFAULT);//Hash the password
+      }
+
+      //Update the relationship manager entered details into database
+      $update = "UPDATE relationship_manager
+      SET Manager_Name='$txtmanagername',Email='$txtemail',Phone_Number='$txtphoneno',Location='$txtlocation',Biography='$txabio', Password='$passwordhash'
+      WHERE ManagerID=$ManagerID";
+      $run= mysql_query($update);
+
+      if($run)
+      {
+        echo "<script>window.alert('Manager updated successfully')
+        window.location ='Profile.php'</script>";
+      }
+
+      else
+      {
+        echo "<script>window.alert('Something went wrong')
+        window.location ='Profile.php'</script>";
+        echo mysql_error();
+      }
+      }
+    }
+
+    else
+    {
+      echo "<script>window.alert('Please enter correct current password!')
+      window.location ='Profile.php'</script>";
+    }
+  }
+
+//Check if user has clicked Delete Account button
+  if(isset($_POST['deletebutton']))
+  {
+    //Get user inputted current password
+    $txtcurrentpassword = htmlspecialchars($_POST['txtcurrentpassword']);
+    //Check the user entered current password with database password for verification
+    if(password_verify($txtcurrentpassword, $password))
+    {
+
+    $delete = "DELETE FROM relationship_manager
+    WHERE ManagerID='$ManagerID'";
+    $run = mysql_query($delete);
+
+     if($run)
+      {
+        echo "<script>window.alert('Manager deleted successfully')
+        window.location ='HomePage.php'</script>";
+        unset($_SESSION['UserID']);
+      }
+
+      else
+      {
+        echo "<script>window.alert('Something went wrong')
+        window.location ='Profile.php'</script>";
+        echo mysql_error();
+      }
+    }
+
+    else
+    {
+      echo "<script>window.alert('Please enter correct current password!')
+      window.location ='Profile.php'</script>";
+    }
+  }
+
+
+}
+
+//Check if anyone has logged in
 else
 {
-  echo "<script>window.alert('Please login as Client to access this page!')
+  echo "<script>window.alert('Please login to access this page!')
     window.location ='Login.php'</script>";
 }
 ?>
@@ -182,10 +311,34 @@ else
 </head>
 <body>
     <div class=e2_163>
-        <div class="e2_164"></div><span  class="e2_167">Profile</span><span  class="e2_187">Investments Related</span><span  class="e3_218">Others</span>
-        <div class=e5_255>
-          <div class="e1_30"></div><a href="HomePage.php"><span  class="e1_33">Home</span></a>
-    <div class="profilebar"><a href="Client Dashboard.php"><span  class="profilenavi">Investment Ideas</span></a></div><a href="Profile.php"><span  class="profilenavi1">Profile</span></a><span  class="e1_130">Messages</span><a href="Logout.php"><span  class="e1_129">Log Out</span></a><span  class="e121_121">Settings</span>
+      
+        <?php
+        //Show Client form if client has logged in 
+          if(isset($_SESSION['UserID']))
+          {
+
+          echo '<div class="e2_164"></div><span  class="e2_167">Profile</span><span  class="e2_187">Investments Related</span><span class="e3_218">Others</span>
+            <div class=e5_255>';  
+           
+          echo '<div class="e1_30"></div><a href="HomePage.php"><span  class="e1_33">Home</span></a>
+                <div class="profilebar"><a href="Client Dashboard.php"><span  class="profilenavi">Investment Ideas</span></a></div><a href="Profile.php"><span  class="profilenavi1">Profile</span></a><span  class="e1_130">Messages</span><a href="Logout.php">
+                <span  class="e1_129">Log Out</span></a><span  class="e121_121">Settings</span>';
+
+          }
+
+          else if(isset($_SESSION['ManagerID']))
+          {
+
+            echo '<div class="e2_164"></div><span  class="e2_167">Profile</span><span  class="e2_187">Biography</span>
+            <div class=e5_255>';  
+
+            echo '<div class="e1_66"></div><a href="HomePage.php"><span  class="e1_69">Home</span></a>
+                  <div class=rmprofilebar><a href="Profile.php"><span  class="rmprofilenavi">Profile</span></a></div><a href="RM Dashboard.php">
+                  <span  class="rmprofilenavi1">Dashboard</span></a><a href="Logout.php"><span  class="e1_77">Log out</span></a>
+                  <span  class="e1_131">Messages</span>';
+
+          }
+        ?>
     <div class=e1_35><span  class="e1_36">Logo</span></div>
         </div>
         <div class=e5_256>
@@ -193,6 +346,13 @@ else
 
           <!--Display the details extracted from database in eachh relevant fields-->
           <form action="" method="post">
+
+          <?php 
+          if(isset($_SESSION['UserID']))
+          {
+
+          ?>  
+
           <span  class="e2_179">User Name</span>
 
           <input type="text" class="e3_199" id="txtusername" name="txtusername" tabindex="1" style="display:none" value="<?php echo $username; ?>">
@@ -405,11 +565,85 @@ else
 
     <button class="e3_241" id="deletebutton" name="deletebutton" formmethod="post" style="display:none">Delete Account</button>
 
+    <?php
+
+    }
+//Show Relationship manager form if manager has logged in
+    else if(isset($_SESSION['ManagerID']))
+          {
+
+          ?>  
+
+          <span  class="e2_179">Name</span>
+
+          <input type="text" class="e3_199" id="txtmanagername" name="txtmanagername" tabindex="1" style="display:none" value="<?php echo $managername; ?>">
+
+          <input type="email" class="e3_200" id="txtemail" name="txtemail" tabindex="2" style="display:none" value="<?php echo $email; ?>">
+
+          <input type="text" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
+
+          <input type="text" class="e3_202" id="txtlocation" name="txtlocation" tabindex="4" style="display:none" value="<?php echo $location; ?>">
+
+          <span class="e3_199" id="spanmanagername"><?php echo $managername; ?></span>
+
+          <span  class="e3_200" id="spanemail"><?php echo $email; ?></span>
+
+          <span  class="e3_201" id="spanphoneno"><?php echo $phone_number; ?></span>
+
+          <span  class="e3_202" id="spanlocation"><?php echo $location; ?></span>
+
+          <span  class="e3_190">Email</span>
+
+          <span  class="e3_191">Phone No.</span>
+
+          <span  class="e3_192">Location</span>
+          <div class=e5_267>
+            <div class="e5_268"></div>
+          </div>
+        </div>
+        <div class=e5_259>
+        </div>
+        <div class=e5_257>
+          <div class="rmprofilebiobox"></div>
+          <textarea  class="rmprofilebio" id="txabio" name="txabio" tabindex="5" style="display:none"><?php echo $bio; ?></textarea>
+          <span  class="rmprofilebio" id="spanbio"><?php echo $bio; ?></span>
+          
+        </div>
+
+
+        <div class=e5_258><span  class="e2_188">Edit Options</span>
+    <div class="e2_186"></div>
+
+    <!--Show the current and change password input text fields on click-->
+    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword">Change Password</a>
+
+    <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
+
+    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters " required="">
+
+    <span class="profile3" id="changedpassword" style="display:none">New Password</span>
+
+    <input type="password" class="profile4" id="txtchangedpassword" name="txtchangedpassword" style="display:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters ">
+
+    <!--Show all the input text fields on click-->
+    <a href="#" onclick="editmanageroptions()" class="profileEdit" id="editaccount">Edit Account</a>
+
+    <button class="profile5" id="editbutton" name="editbutton" formmethod="post" style="display:none">Save Details</button>
+
+    <button class="e3_241" id="deletebutton" name="deletebutton" formmethod="post" style="display:none">Delete Account</button>
+
+    <?php
+
+    }
+
+    ?>
+
     </form>
   </div>
       </div>
       <script src="js/changepassword.js"></script>
-      <script src="js/Editprofile.js"></script>
+      <script src="js/EditCustomerProfile.js"></script>
+      <script src="js/EditManagerProfile.js"></script>
 </body>
 </html>
 
