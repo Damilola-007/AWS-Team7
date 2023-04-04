@@ -4,6 +4,7 @@ function editcreatoroptions()
   document.getElementById('spanemail').style.display='none';
   document.getElementById('spanphoneno').style.display='none';
   document.getElementById('spanwebsite').style.display='none';
+  document.getElementById('spanskills').style.display='none';
   document.getElementById('spanlinkedin').style.display='none';
   document.getElementById('spanindustry').style.display='none';
   document.getElementById('spaneducation').style.display='none';
@@ -15,6 +16,7 @@ function editcreatoroptions()
   document.getElementById('txtemail').style.display='block';
   document.getElementById('txtphoneno').style.display='block';
   document.getElementById('txtwebsite').style.display='block';
+  document.getElementById('txtskills').style.display='block';
   document.getElementById('txtlinkedin').style.display='block';
   document.getElementById('txtindustry').style.display='block';
   document.getElementById('txaeducation').style.display='block';
