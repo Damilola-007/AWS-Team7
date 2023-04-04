@@ -125,6 +125,14 @@ if(isset($_SESSION['UserID']))
           echo "<script>window.alert('Changed Password successfully! Please re-login again!')
           window.location ='Login.php'</script>";
         }
+
+        else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
+        {
+          session_destroy();
+          echo "<script>window.alert('Client updated and Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+
         else
         {
         echo "<script>window.alert('Client updated successfully')
@@ -288,6 +296,14 @@ else if(isset($_SESSION['ManagerID']))
           echo "<script>window.alert('Changed Password successfully! Please re-login again!')
           window.location ='Login.php'</script>";
         }
+
+        else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
+        {
+          session_destroy();
+          echo "<script>window.alert('Manager updated and Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+
         else
         {
         echo "<script>window.alert('Manager updated successfully')
@@ -461,6 +477,14 @@ else if(isset($_SESSION['CreatorID']))
           echo "<script>window.alert('Changed Password successfully! Please re-login again!')
           window.location ='Login.php'</script>";
         }
+
+        else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
+        {
+          session_destroy();
+          echo "<script>window.alert('Creator updated and Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+
         else
         {
         echo "<script>window.alert('Creator updated successfully')
