@@ -380,6 +380,7 @@ else if(isset($_SESSION['CreatorID']))
     $txtemail = htmlspecialchars($_POST['txtemail']);
     $txtphoneno = htmlspecialchars($_POST['txtphoneno']);
     $txtwebsite = htmlspecialchars($_POST['txtwebsite']);
+    $txtskills = htmlspecialchars($_POST['txtskills']);
     $txtlinkedin = htmlspecialchars($_POST['txtlinkedin']);
     $txtindustry = htmlspecialchars($_POST['txtindustry']);
     $txaeducation = htmlspecialchars($_POST['txaeducation']);
@@ -430,7 +431,7 @@ else if(isset($_SESSION['CreatorID']))
       {
       //Update the relationship manager entered details into database
       $update = "UPDATE product_idea_creator
-      SET Creator_Name='$txtcreatorname',Email='$txtemail',Phone_Number='$txtphoneno',Website='$txtwebsite',LinkedIn='$txtlinkedin', Industry='$txtindustry', Work_Experience='$txaexp', Education='$txaeducation', Password='$passwordhash'
+      SET Creator_Name='$txtcreatorname',Email='$txtemail',Phone_Number='$txtphoneno',Website='$txtwebsite',Skills='$txtskills',LinkedIn='$txtlinkedin', Industry='$txtindustry', Work_Experience='$txaexp', Education='$txaeducation', Password='$passwordhash'
       WHERE Creator_ID=$CreatorID";
       $run= mysql_query($update);
 
@@ -882,6 +883,8 @@ else
 
           <input type="text" class="e3_202" id="txtwebsite" name="txtwebsite" tabindex="4" style="display:none" value="<?php echo $website; ?>">
 
+          <input type="text" class="icprofileskillstext" id="txtskills" name="txtskills" tabindex="4" style="display:none" value="<?php echo $skills; ?>">
+
           <span class="e3_199" id="spancreatorname"><?php echo $creatorname; ?></span>
 
           <span  class="e3_200" id="spanemail"><?php echo $email; ?></span>
@@ -890,11 +893,15 @@ else
 
           <span  class="e3_202" id="spanwebsite"><?php echo $website; ?></span>
 
+          <span  class="icprofileskillstext" id="spanskills"><?php echo $skills; ?></span>
+
           <span  class="e3_190">Email</span>
 
           <span  class="e3_191">Phone No.</span>
 
           <span  class="e3_192">Website</span>
+
+          <span  class="icprofileskills">Skills</span>
           <div class=e5_267>
             <div class="e5_268"></div>
           </div>
