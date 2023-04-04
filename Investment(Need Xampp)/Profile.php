@@ -119,6 +119,7 @@ if(isset($_SESSION['UserID']))
 
       if($run)
       {
+        //Check if client is only changing password
         if($_POST['passvariable']=="1")
         {
           session_destroy();
@@ -126,6 +127,7 @@ if(isset($_SESSION['UserID']))
           window.location ='Login.php'</script>";
         }
 
+        //Check if client has changed the password
         else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
         {
           session_destroy();
@@ -290,6 +292,7 @@ else if(isset($_SESSION['ManagerID']))
 
       if($run)
       {
+        //Check if manager is only changing password
         if($_POST['passvariable']=="1")
         {
           session_destroy();
@@ -297,6 +300,7 @@ else if(isset($_SESSION['ManagerID']))
           window.location ='Login.php'</script>";
         }
 
+        //Check if manager has changed the password
         else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
         {
           session_destroy();
@@ -471,6 +475,7 @@ else if(isset($_SESSION['CreatorID']))
 
       if($run)
       {
+        //Check if creator is only changing password
         if($_POST['passvariable']=="1")
         {
           session_destroy();
@@ -478,6 +483,7 @@ else if(isset($_SESSION['CreatorID']))
           window.location ='Login.php'</script>";
         }
 
+        //Check if creator has changed the password
         else if($_POST['passvariable']=="2" && $txtchangedpassword!="")
         {
           session_destroy();
