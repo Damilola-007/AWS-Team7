@@ -119,8 +119,17 @@ if(isset($_SESSION['UserID']))
 
       if($run)
       {
+        if($_POST['passvariable']=="1")
+        {
+          session_destroy();
+          echo "<script>window.alert('Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+        else
+        {
         echo "<script>window.alert('Client updated successfully')
         window.location ='Profile.php'</script>";
+        }
       }
 
       }
@@ -161,9 +170,9 @@ if(isset($_SESSION['UserID']))
 
      if($run)
       {
+        session_destroy();
         echo "<script>window.alert('Client deleted successfully')
         window.location ='HomePage.php'</script>";
-        unset($_SESSION['UserID']);
       }
 
       else
@@ -273,8 +282,17 @@ else if(isset($_SESSION['ManagerID']))
 
       if($run)
       {
+        if($_POST['passvariable']=="1")
+        {
+          session_destroy();
+          echo "<script>window.alert('Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+        else
+        {
         echo "<script>window.alert('Manager updated successfully')
         window.location ='Profile.php'</script>";
+        }
       }
 
       }
@@ -315,9 +333,9 @@ else if(isset($_SESSION['ManagerID']))
 
      if($run)
       {
+        session_destroy();
         echo "<script>window.alert('Manager deleted successfully')
         window.location ='HomePage.php'</script>";
-        unset($_SESSION['ManagerID']);
       }
 
       else
@@ -437,8 +455,17 @@ else if(isset($_SESSION['CreatorID']))
 
       if($run)
       {
+        if($_POST['passvariable']=="1")
+        {
+          session_destroy();
+          echo "<script>window.alert('Changed Password successfully! Please re-login again!')
+          window.location ='Login.php'</script>";
+        }
+        else
+        {
         echo "<script>window.alert('Creator updated successfully')
         window.location ='Profile.php'</script>";
+        }
       }
 
       }
@@ -479,9 +506,9 @@ else if(isset($_SESSION['CreatorID']))
 
      if($run)
       {
+        session_destroy();
         echo "<script>window.alert('Creator deleted successfully')
         window.location ='HomePage.php'</script>";
-        unset($_SESSION['CreatorID']);
       }
 
       else
@@ -526,6 +553,8 @@ else
             <center><font size ="8">Please enable JavaScript to use this page!</font></center>
             <div style="display:none"></body>
             </noscript>
+
+
 </head>
 <body>
     <div class=e2_163>
@@ -778,7 +807,7 @@ else
     <div class="e2_186"></div>
 
     <!--Show the current and change password input text fields on click-->
-    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword">Change Password</a>
+    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword" name="changepassword">Change Password</a>
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
@@ -790,6 +819,8 @@ else
 
     <!--Show all the input text fields on click-->
     <a href="#" onclick="editoptions()" class="profileEdit" id="editaccount">Edit Account</a>
+
+    <input type="hidden" id="passvariable" name="passvariable" value="0">
 
     <button class="profile5" id="editbutton" name="editbutton" formmethod="post" style="display:none">Save Details</button>
 
@@ -845,7 +876,7 @@ else
     <div class="e2_186"></div>
 
     <!--Show the current and change password input text fields on click-->
-    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword">Change Password</a>
+    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword" name="changepassword">Change Password</a>
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
@@ -857,6 +888,8 @@ else
 
     <!--Show all the input text fields on click-->
     <a href="#" onclick="editmanageroptions()" class="profileEdit" id="editaccount">Edit Account</a>
+
+    <input type="hidden" id="passvariable" name="passvariable" value="0">
 
     <button class="profile5" id="editbutton" name="editbutton" formmethod="post" style="display:none">Save Details</button>
 
@@ -943,7 +976,7 @@ else
     <div class="e2_186"></div>
 
     <!--Show the current and change password input text fields on click-->
-    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword">Change Password</a>
+    <a href="#" onclick="changepassword()" class="e3_239" id="changepassword" name="changepassword">Change Password</a>
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
@@ -955,6 +988,8 @@ else
 
     <!--Show all the input text fields on click-->
     <a href="#" onclick="editcreatoroptions()" class="profileEdit" id="editaccount">Edit Account</a>
+
+    <input type="hidden" id="passvariable" name="passvariable" value="0">
 
     <button class="profile5" id="editbutton" name="editbutton" formmethod="post" style="display:none">Save Details</button>
 
@@ -970,7 +1005,7 @@ else
   </div>
       </div>
       <script src="js/changepassword.js"></script>
-      <script src="js/EditCustomerProfile.js"></script>
+      <script src="js/EditClientProfile.js"></script>
       <script src="js/EditManagerProfile.js"></script>
       <script src="js/EditCreatorProfile.js"></script>
 </body>
