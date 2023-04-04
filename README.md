@@ -22,4 +22,4 @@ Note: All the hashed password in the database translates to "Test1234" except th
 
 How To Use Investment(Applied Laravel Framework) zip,
 
-Extract the file and after that paste the file in C:\Xampp\htdocs. After doing that run laravel framework by navigating to that directory, open command prompt enter "php artisan serve" to run the server. After that just go to localhost:8000 and it will display the webpage. Warning: the database name in phpmyadmin must be exactly "investmentdb" for it to work.
+Firstly, download the file from release page. After that, extract the file and after that paste the file in C:\Xampp\htdocs. After doing that run laravel framework by navigating to that directory, open command prompt enter "php artisan serve" to run the server. After that just go to localhost:8000 and it will display the webpage. Warning: the database name in phpmyadmin must be exactly "investmentdb" for it to work.
