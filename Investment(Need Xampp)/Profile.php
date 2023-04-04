@@ -841,7 +841,7 @@ else
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
-    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters " required="">
+    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" required="">
 
     <span class="profile3" id="changedpassword" style="display:none">New Password</span>
 
@@ -910,7 +910,7 @@ else
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
-    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters " required="">
+    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" required="">
 
     <span class="profile3" id="changedpassword" style="display:none">New Password</span>
 
@@ -1010,7 +1010,7 @@ else
 
     <span class="e3_240" id="currentpassword" style="display:none">Current Password</span>
 
-    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Please enter at least one lowercase and uppercase character with number between 8 to 16 characters " required="">
+    <input type="password" class="profile2" id="txtcurrentpassword" name="txtcurrentpassword" style="display:none" required="">
 
     <span class="profile3" id="changedpassword" style="display:none">New Password</span>
 
