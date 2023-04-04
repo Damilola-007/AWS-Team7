@@ -10187,6 +10187,67 @@ button.v85_22 {
 	letter-spacing:0;
 }
 
+.rmprofilebar { 
+	background-color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:44px;
+	position:absolute;
+	left:0px;
+	top:354px;
+}
+
+.rmprofilenavi { 
+	color:rgba(0, 0, 0, 1);
+	width:158px;
+	height:28px;
+	position:absolute;
+	left:58px;
+	top:8px;
+	font-family:Arial;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+}
+
+.rmprofilenavi1 { 
+	color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:28px;
+	position:absolute;
+	left:0px;
+	top:462px;
+	font-family:Arial;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+}
+
+.rmprofilebio { 
+	color:rgba(0, 0, 0, 1);
+	width:464px;
+	height:470px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Mulish;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+}
+
+.rmprofilebiobox { 
+	box-shadow:0px 0px 8px rgba(0, 0, 0, 0.23999999463558197);
+	background-color:rgba(255, 255, 255, 1);
+	width:464px;
+	height:470px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
 body{
     -webkit-transform: scale(0.85);
     -moz-transform: scale(0.85);
