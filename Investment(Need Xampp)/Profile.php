@@ -154,7 +154,7 @@ if(isset($_SESSION['UserID']))
   }
 }
 
-else if($_SESSION['ManagerID'])
+else if(isset($_SESSION['ManagerID']))
 {
 
   $ManagerID = $_SESSION['ManagerID'];
