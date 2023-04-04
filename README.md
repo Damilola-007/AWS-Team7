@@ -22,4 +22,4 @@ Note: All the hashed password in the database translates to "Test1234" except th
 
 How TO Use Investment Codenigter framework) zip,
 
-Firstly, download the file from release page. After that extract the file and after that paste the file in C:\Xampp\htdocs. After doing that run codenigiter framework by navigating to that directory, open command prompt enter "php spark serve" to run the server. After that just go to localhost:8080 and it will display the webpage. This is released because laravel framework is causing a lot of issues.
+Firstly, download the file from release page. Extract the file and after that paste the file in anywhere. After doing that run codenigiter framework by navigating to the "Investment CodeIgniter, open command prompt enter "php spark serve" to run the server. After that just go to localhost:8080 and it will display the webpage. This is released because laravel framework is causing a lot of issues..
