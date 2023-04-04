@@ -37,4 +37,13 @@ function editoptions()
   document.getElementById('txtchangedpassword').style.display='block';
   document.getElementById('editbutton').style.display='block';
   document.getElementById('deletebutton').style.display='block';
+
+  function Change()
+  {
+   var pass = document.getElementById("passvariable");
+            pass.value = "2";
+  }
+
+  document.getElementById('txtchangedpassword').onchange = Change;
+
 }
