@@ -55,7 +55,7 @@ if(isset($_POST['btnlogin']))
 
                 else
                 {
-                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.alert('Please enter valid credentials!')</script>";
                   echo "<script>window.location = 'Login.php'</script>";
                 }
             } 
@@ -110,7 +110,7 @@ if(isset($_POST['btnlogin']))
 
                 else
                 {
-                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.alert('Please enter valid credentials!')</script>";
                   echo "<script>window.location = 'Login.php'</script>";
                 }
             } 
@@ -162,7 +162,7 @@ if(isset($_POST['btnlogin']))
 
                 else
                 {
-                  echo "<script>window.alert('Please enter valid Password')</script>";
+                  echo "<script>window.alert('Please enter valid credentials!')</script>";
                   echo "<script>window.location = 'Login.php'</script>";
                 }
             } 
@@ -191,7 +191,7 @@ if(isset($_POST['btnlogin']))
 
     else
     {   
-      echo "<script>window.alert('Please enter valid Email')</script>";
+      echo "<script>window.alert('Please enter valid credentials!')</script>";
       echo "<script>window.location = 'Login.php'</script>";
 
     }
