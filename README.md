@@ -23,3 +23,6 @@ Note: All the hashed password in the database translates to "Test1234" except th
 How To Use Investment (CodeIgniter framework) zip,
 
 Firstly, download the "Investment CodeIgniter.zip" from release page. Extract the file and after that paste the file in anywhere. Afterwards run Xampp apache, sql servers. After doing that run codeIgniter framework by navigating to the "Investment CodeIgniter" folder, open command prompt enter "php spark serve" to run the server. After that just go to localhost:8080 and it will display the webpage. This is released because laravel framework is causing a lot of issues..
+
+If there are any errors after you follow the instruction, you will have to enable intdll extension from php.ini which can be mostly found in C:\xampp\php\.
+
