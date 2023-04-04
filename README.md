@@ -20,6 +20,6 @@ Please download the latest versions. You can check what file or folder is latest
 
 Note: All the hashed password in the database translates to "Test1234" except the Product Idea Creator named "Thant Thu Aung" and Relationship manager named "Thant"
 
-How TO Use Investment CodeIgniter framework) zip,
+How To Use Investment CodeIgniter framework) zip,
 
-Firstly, download the "Investment CodeIgniter.zip" from release page. Extract the file and after that paste the file in anywhere. Afterwards run Xampp apache, sql servers. After doing that run codenigiter framework by navigating to the "Investment CodeIgniter" folder, open command prompt enter "php spark serve" to run the server. After that just go to localhost:8080 and it will display the webpage. This is released because laravel framework is causing a lot of issues..
+Firstly, download the "Investment CodeIgniter.zip" from release page. Extract the file and after that paste the file in anywhere. Afterwards run Xampp apache, sql servers. After doing that run codeIgniter framework by navigating to the "Investment CodeIgniter" folder, open command prompt enter "php spark serve" to run the server. After that just go to localhost:8080 and it will display the webpage. This is released because laravel framework is causing a lot of issues..
