@@ -130,7 +130,6 @@ if(!isset($_SESSION['CreatorID']))
 
     echo "<td>".$Product_Name."</td>";
     echo "<td>".$Product_type."</td>";
-    echo "<td>£".$Product_Price."</td>";
     echo "<td>".$RiskRating."</td>";
     echo "<td>".$Instruments."</td>";
     echo "<td>".$Currency."</td>";
