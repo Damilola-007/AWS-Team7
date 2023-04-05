@@ -1,7 +1,7 @@
 # AWS-Team7
 Advance Web Solution
 
-Assignment Title: Investment web application
+Assignment Title: Investment Ideas Platform
 
 Currently done things
 
