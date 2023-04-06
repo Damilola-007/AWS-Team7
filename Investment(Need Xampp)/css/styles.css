@@ -10335,7 +10335,7 @@ button.v85_22 {
 .icprofileedu { 
 	color:rgba(0, 0, 0, 1);
 	width:452px;
-	height:209px;
+	height:208px;
 	position:absolute;
 	left:0px;
 	top:0px;
@@ -10350,10 +10350,10 @@ button.v85_22 {
 
 .icprofileexp { 
 	color:rgba(0, 0, 0, 1);
-	width:462px;
-	height:209px;
+	width:461px;
+	height:208px;
 	position:absolute;
-	left:0px;
+	left:1px;
 	top:0px;
 	font-family:Mulish;
 	text-align:left;
