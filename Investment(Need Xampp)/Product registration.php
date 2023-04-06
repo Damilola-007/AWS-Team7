@@ -124,8 +124,23 @@ if(isset($_POST['productupdate']))
 <html lang="en">
           <head>
             <meta charset="utf-8">
-          
-            <title>Product Registration</title>
+            
+            <?php 
+            if(isset($_GET['ProductID']))
+            {
+
+              echo '<title>Update Product</title>';
+
+            }
+
+            else
+            {
+
+              echo '<title>Product Registration</title>';
+
+            }
+            ?>
+
             <meta name="description" content="Figma htmlGenerator">
             <meta name="author" content="htmlGenerator">
             <link href="https://fonts.googleapis.com/css?family=Mulish&display=swap" rel="stylesheet">
@@ -150,7 +165,22 @@ if(isset($_POST['productupdate']))
           
           <body>
             <div class=e91_86>
-  <div class="e91_87"></div><span  class="e91_88">Register Product</span>
+            <?php 
+            if(isset($_GET['ProductID']))
+            {
+
+              echo '<div class="e91_87"></div><span  class="e91_88">Update Product</span>';
+
+            }
+
+            else
+            {
+
+              echo '<div class="e91_87"></div><span  class="e91_88">Register Product</span>';
+
+            }
+            ?>
+
   <div class=e91_92>
     <div class="e91_93"></div>
     <div class=e91_94>
