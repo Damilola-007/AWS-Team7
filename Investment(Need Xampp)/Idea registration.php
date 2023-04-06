@@ -209,8 +209,23 @@ if(isset($_POST['ideaupdate']))
 <html lang="en">
           <head>
             <meta charset="utf-8">
+
+            <?php 
+            if(isset($_GET['IdeasID']))
+            {
+
+              echo '<title>Update Idea</title>';
+
+            }
+
+            else
+            {
+
+              echo '<title>Idea registration</title>';
+
+            }
+            ?>
           
-            <title>Idea registration</title>
             <meta name="description" content="Figma htmlGenerator">
             <meta name="author" content="htmlGenerator">
             <link href="https://fonts.googleapis.com/css?family=Mulish&display=swap" rel="stylesheet">
@@ -251,7 +266,23 @@ if(isset($_POST['ideaupdate']))
           
           <body onload="removeduplicate()">
             <div class=e91_86>
-  <div class="e91_87"></div><span  class="e91_88">Register Idea</span>
+
+            <?php 
+            if(isset($_GET['IdeasID']))
+            {
+
+              echo '<div class="e91_87"></div><span  class="e91_88">Update Idea</span>';
+
+            }
+
+            else
+            {
+
+              echo '<div class="e91_87"></div><span  class="e91_88">Register Idea</span>';
+
+            }
+            ?>
+
   <div class=e91_92>
     <div class="e91_93"></div>
     <div class=e91_94>
