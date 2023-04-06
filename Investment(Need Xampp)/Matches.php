@@ -96,7 +96,7 @@ else
     <div class="e1_101"></div>
     <div class=e1_143>
     <div class="e1_66"></div><a href="HomePage.php"><span  class="e1_69">Home</span></a>
-    <div class=e1_125><a href="RM Dashboard.php"><span  class="e1_70">Dashboard</span></a></div><span  class="e1_76">Evaluate Ideas</span><a href="Logout.php"><span  class="e1_77">Log out</span></a><span  class="e1_131">Messages</span>
+    <div class=e1_125><a href="RM Dashboard.php"><span  class="e1_70">Dashboard</span></a></div><a href="Profile.php"><span  class="e1_76">Profile</span></a><a href="Logout.php"><span  class="e1_77">Log out</span></a><span  class="e1_131">Messages</span>
     <div class=e1_71><span  class="e1_72">Logo</span></div>
   </div>
   </div>
