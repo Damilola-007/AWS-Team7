@@ -386,7 +386,7 @@ else if(isset($_SESSION['CreatorID']))
   $ret = mysql_query($select);
   $count= mysql_num_rows($ret);
 
-//Check if relationship manager has properly logged in
+//Check if product idea creator has properly logged in
   if($count==0)
   {
     echo "<script>window.alert('Something went wrong!')
