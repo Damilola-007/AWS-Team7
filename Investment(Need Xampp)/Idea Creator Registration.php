@@ -139,7 +139,7 @@ if($run)
       </div>
       <div class=e440_297><label for="phone_number"><span  class="e440_298">Phone Number</span></label>
         <div>
-          <input class="creatreg4" type="text" name="phone_number" id="phone_number" required>
+          <input class="creatreg4" type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" name="phone_number" id="phone_number" required>
         </div>
       </div>
       <div class="creatreg5"><span  class="creatreg6">Website</span>
