@@ -91,7 +91,7 @@ echo "<script>
           </div>
           <div class=e437_210><label for="Phone"><span  class="e437_211">Phone No</span> </label>
             <div>
-              <input class="e437_212" type="number" id="Phone" name="Phone" tabindex="6" required placeholder="+Country Code">
+              <input class="e437_212" type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" id="Phone" name="Phone" tabindex="6" required placeholder="+Country Code">
             
             </div>
           </div>
