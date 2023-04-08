@@ -128,7 +128,7 @@ if($count>0 || $count1>0 || $count2>0)
           <div> 
 
           <span  class="e420_12">Phone number </span>
-      </span><input class="e420_8" name="phonenumber" id="phonenumber" tabindex="5" required></div>
+      </span><input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" class="e420_8" name="phonenumber" id="phonenumber" tabindex="5" required></div>
 
       <span  class="e420_17">Location</span><span  class="e420_20">Bio</span>
 
