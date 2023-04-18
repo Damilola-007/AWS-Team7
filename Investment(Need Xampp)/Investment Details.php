@@ -107,7 +107,7 @@ else
   
   <div class=e90_75>
     <div class="e90_76"></div><a href="HomePage.php"><span  class="e1_33">Home</span></a>
-    <div class="investdetailsnobar"><a href="Client Dashboard.php"><span  class="investdetailsblack">Investment Ideas</span></a></div><span  class="e1_128">Profile</span><span  class="e1_130">Messages</span><a href="Logout.php"><span  class="e1_129">Log Out</span></a><span  class="e121_121">Settings</span>
+    <div class="investdetailsnobar"><a href="Client Dashboard.php"><span  class="investdetailsblack">Investment Ideas</span></a></div><a href="Profile.php"><span  class="e1_128">Profile</span></a><span  class="e1_130">Messages</span><a href="Logout.php"><span  class="e1_129">Log Out</span></a><span  class="e121_121">Settings</span>
     <div class=e90_83><span  class="e90_84">Logo</span></div>
   </div>
 </div>
