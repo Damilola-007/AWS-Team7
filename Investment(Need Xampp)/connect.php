@@ -1,6 +1,6 @@
 <?php  
 include("PHP7fix.php");
-$host = "localhost";
+$host = "127.0.0.1";
 $user = "root";
 $pass = "";
 $database = "investmentdb";
