@@ -657,7 +657,7 @@ else
 
           <input type="email" class="e3_200" id="txtemail" name="txtemail" tabindex="2" style="display:none" value="<?php echo $email; ?>">
 
-          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
+          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
 
           <input type="text" class="e3_202" id="txtoccupation" name="txtoccupation" tabindex="4" style="display:none" value="<?php echo $occupation; ?>">
 
@@ -880,7 +880,7 @@ else
 
           <input type="email" class="e3_200" id="txtemail" name="txtemail" tabindex="2" style="display:none" value="<?php echo $email; ?>">
 
-          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
+          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
 
           <input type="text" class="e3_202" id="txtlocation" name="txtlocation" tabindex="4" style="display:none" value="<?php echo $location; ?>">
 
@@ -951,7 +951,7 @@ else
 
           <input type="email" class="e3_200" id="txtemail" name="txtemail" tabindex="2" style="display:none" value="<?php echo $email; ?>">
 
-          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" title="Please Enter Phone Number in this format: +44 7123456789" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
+          <input type="tel" pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" class="e3_201" id="txtphoneno" name="txtphoneno" tabindex="3" style="display:none" value="<?php echo $phone_number; ?>">
 
           <input type="text" class="e3_202" id="txtwebsite" name="txtwebsite" tabindex="4" style="display:none" value="<?php echo $website; ?>">
 
