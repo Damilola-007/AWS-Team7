@@ -530,6 +530,9 @@ else if(isset($_SESSION['CreatorID']))
     if(password_verify($txtcurrentpassword, $password))
     {
 
+    try
+    {
+
     $delete = "DELETE FROM product_idea_creator
     WHERE Creator_ID='$CreatorID'";
     $run = mysql_query($delete);
@@ -541,9 +544,15 @@ else if(isset($_SESSION['CreatorID']))
         window.location ='HomePage.php'</script>";
       }
 
-      else
+    }
+      catch(Execption $e)
       {
-        echo "<script>window.alert('Something went wrong')
+        
+      }
+
+      finally
+      {
+        echo "<script>window.alert('Please delete Product or Idea associated with this creator first!')
         window.location ='Profile.php'</script>";
         echo mysql_error();
       }
