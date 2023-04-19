@@ -28,6 +28,21 @@ if(isset($_POST['btnlogin']))
         //Check if user input password matches with database hased password
             if(password_verify($Password, $row['Password']))
             {
+              if(isset($_SESSION['UserID']))
+              {
+                unset($_SESSION['UserID']);
+              }
+
+              if(isset($_SESSION['ManagerID']))
+              {
+                unset($_SESSION['ManagerID']);
+              }
+
+              if(isset($_SESSION['CreatorID']))
+              {
+                unset($_SESSION['CreatorID']);
+              }
+
               $_SESSION['UserID']=$row['UserID'];
 
               echo "<script>window.alert('Client Login Successfully')</script>";
@@ -83,6 +98,22 @@ if(isset($_POST['btnlogin']))
         //Check if user input password matches with database hased password
         if(password_verify($Password, $row['Password']))
         {
+
+          if(isset($_SESSION['UserID']))
+              {
+                unset($_SESSION['UserID']);
+              }
+
+              if(isset($_SESSION['ManagerID']))
+              {
+                unset($_SESSION['ManagerID']);
+              }
+
+              if(isset($_SESSION['CreatorID']))
+              {
+                unset($_SESSION['CreatorID']);
+              }
+
           $_SESSION['ManagerID']=$row['ManagerID'];
 
           echo "<script>window.alert('Manager Login Successfully')</script>";
@@ -135,6 +166,22 @@ if(isset($_POST['btnlogin']))
         //Check if user input password matches with database hased password
           if(password_verify($Password, $row['Password']))
             {
+
+              if(isset($_SESSION['UserID']))
+              {
+                unset($_SESSION['UserID']);
+              }
+
+              if(isset($_SESSION['ManagerID']))
+              {
+                unset($_SESSION['ManagerID']);
+              }
+
+              if(isset($_SESSION['CreatorID']))
+              {
+                unset($_SESSION['CreatorID']);
+              }
+
               $_SESSION['CreatorID']=$row['Creator_ID'];
 
               echo "<script>window.alert('Creator Login Successfully')</script>";
